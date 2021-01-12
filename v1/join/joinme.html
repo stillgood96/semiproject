@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>세미프로젝트v1</title>
+    <style>
+        .fatdiv {padding :10px;}
+        .margin30 { margin: 30px 0;}
+        .margin100 {margin: 100px 0 30px 0;}
+        .margin1050 {margin:0px 30px 30px 50px}
+        .breadcrumb-item+.breadcrumb-item::before {
+            content: url(../../img/GLYPHICONS/glyphicons_223_thin_right_arrow.png);
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header class="row">
+        <div class="col-6">
+            <h1><a href="../index.html">Loren Inpsum</a></h1>
+        </div>
+        <div class="col-6 text-right ">
+            <H1>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#loginmodal">로그인</button>
+                <button type="button" class="btn btn-primary">회원가입</button>
+            </H1>
+        </div>
+    </header>
+
+    <nav class="nav navbar-expand navbar-dark bg-dark">
+        <ul class="nav navbar-nav nav-fill w-100">
+            <li class="nav-item "><a class="nav-link" href="intro.html">프로젝트소개</a></li>
+            <li class="nav-item active"><a class="nav-link disabled">회원가입</a></li>
+            <li class="nav-item "><a  class="nav-link"href="board/list.html">게시판</a></li>
+            <li class="nav-item "><a class="nav-link" href="pds/list.html">자료실</a></li>
+            <li class="nav-item "><a class="nav-link" href="gallery/list.html">갤러리</a></li>
+            <li class="nav-item "><a class="nav-link" href="admin.html">관리자</a></li>
+        </ul>
+    </nav>
+
+    <div id="main margin30">
+        <div class="margin30">
+            <h3><i class="bi bi-people-fill"></i> 회원가입</h3>
+            <hr>
+        </div>
+
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item active">
+                <button type="button" class="btn btn-success disabled btn-sm">이용약관</button>
+            </li>
+            <li class="breadcrumb-item active">
+                <button type="button" class="btn btn-success disabled btn-sm">실명확인</button></li>
+            <li class="breadcrumb-item active">
+                <button type="button" class="btn btn-success disabled btn-sm">정보입력</button></li>
+            <li class="breadcrumb-item active">
+                <button type="button" class="btn btn-light disabled btn-sm">가입완료</button></li>
+        </ul>
+
+        <div class="margin100">
+            <h3>회원정보 입력</h3>
+            <small class="text-muted">회원정보는 개인정보 취급방침에 따라 안전하게 보호되며, 회원님의 명백한 동의없이 공개 또는 제3자에게 제공되지 않습니다.</small>
+            <hr>
+        </div>
+
+        <div class="card card-body bg-light">
+            <h3>일반회원</h3>
+            <form>
+                <div class="form-group row">
+                <label for="name" class="col-form-label col-3 text-right text-danger">이름</label>
+                <input type="text" id="name" class="form-control col-2 border-danger ">
+                </div>
+
+                <div class="form-group row">
+                    <label for="idnum" class="col-form-label col-3 text-right text-danger" >주민등록번호</label>
+                    <input type="text" id="idnum" class="form-control col-2 border-danger ">&nbsp;-&nbsp;<input type="text" class="form-control col-2 border-danger ">
+                </div>
+
+                    <div class="form-group row">
+                        <label for="id" class="col-form-label col-3 text-right text-danger">아이디</label>
+                        <input type="text" id="id" class="form-control col-2 border-danger">
+                        <small class="mt-2 ml-1">6~16자의 영문 소문자, 숫자와 특수기호(_)만 사용할 수 있습니다.</small>
+                    </div>
+
+                <div class="form-group row">
+                    <label for="pwd" class="col-form-label col-3 text-right text-danger">비밀번호</label>
+                    <input type="password" id="pwd" class="form-control col-2 border-danger">
+                    <small class="mt-2 ml-1">6~16자의 영문 대소문자, 숫자 및 특수문자 사용할 수 있습니다.</small>
+                </div>
+
+                <div class="form-group row">
+                    <label for="check" class="col-form-label col-3 text-right text-danger">비밀번호확인</label>
+                    <input type="text" id="check" class="form-control col-2 border-danger">
+                    <small class="mt-2 ml-1">이전 항목에서 입력했던 비밀번호를 한번 더 입력하세요.</small>
+                </div>
+
+                <div class="form-group row">
+                    <label for="post" class="col-form-label col-3 text-right text-danger" >우편번호</label>
+                    <input type="text" id="post" class="form-control col-1 border-danger ">&nbsp;-&nbsp;<input type="text" class="form-control col-1 border-danger ">
+                    <button class="btn btn-dark col-2 ml-2"><i class="bi bi-patch-question"></i>  우편번호 찾기</button>
+                </div>
+
+                <div class="form-group row">
+                    <label for="address" class="col-form-label col-3 text-right text-danger" >주소</label>
+                    <input type="text" id="address" class="form-control col-3 border-danger "><input type="text" class="ml-2 form-control col-3 border-danger ">
+                </div>
+
+
+
+
+            </form>
+        </div>
+    </div><!-- main -->
+
+
+
+
+    <footer class="row margin30">
+        <div class="col text-right fatdiv bg-light">
+            <h6 class="bg-light fatdiv" style="">Copyright &copy; Lorem Ipsum 2021. All Rights Reserved. Created By Bootstrap4</h6>
+        </div>
+    </footer>
+</div>
+
+<!-- 로그인 모달 -->
+<div id="loginmodal" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">로그인</h3>
+                <button class="btn btn-light"
+                        type="button"
+                        data-dismiss="modal">닫기</button>
+            </div><!-- 헤더 -->
+            <div class="modal-body">
+                <form id="loginfrm">
+                    <div class="form-group row text-center">
+                        <label for="userid"
+                               class="col-form-label col-4">아이디</label>
+                        <input type="text" id="userid"
+                               class="form-control col-6">
+                    </div>
+                    <div class="form-group row text-center">
+                        <label for="passwd"
+                               class="col-form-label col-4">비밀번호</label>
+                        <input type="password" id="passwd"
+                               class="form-control col-6">
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-4"></div>
+                        <div class="form-check">
+                            <input type="checkbox"
+                                   class="form-check-input">
+                            <label class="form-check-label">
+                                로그인 상태 유지</label>
+                        </div>
+                    </div>
+                </form>
+            </div><!-- 본문 -->
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-danger">로그인</button>
+                <button type="button" class="btn btn-success">
+                    아이디/비밀번호찾기</button>
+            </div><!-- 푸터 -->
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="../../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
