@@ -37,15 +37,14 @@
 
     <nav class="nav navbar-expand navbar-dark bg-dark">
         <ul class="nav navbar-nav nav-fill w-100">
-            <li class="nav-item "><a class="nav-link" href="intro.html">프로젝트소개</a></li>
+            <li class="nav-item "><a class="nav-link" href="../index.html">프로젝트소개</a></li>
             <li class="nav-item active"><a class="nav-link disabled">회원가입</a></li>
-            <li class="nav-item "><a  class="nav-link"href="board/list.html">게시판</a></li>
-            <li class="nav-item "><a class="nav-link" href="pds/list.html">자료실</a></li>
-            <li class="nav-item "><a class="nav-link" href="gallery/list.html">갤러리</a></li>
-            <li class="nav-item "><a class="nav-link" href="admin.html">관리자</a></li>
+            <li class="nav-item "><a  class="nav-link"href="../board/list.html">게시판</a></li>
+            <li class="nav-item "><a class="nav-link" href="../pds/list.html">자료실</a></li>
+            <li class="nav-item "><a class="nav-link" href="../gallery/list.html">갤러리</a></li>
+            <li class="nav-item "><a class="nav-link" href="../admin.html">관리자</a></li>
         </ul>
     </nav>
-
     <div id="main margin30">
         <div class="margin30">
             <h3><i class="bi bi-people-fill"></i> 회원가입</h3>
@@ -71,8 +70,8 @@
             <hr>
         </div>
 
-        <div class="card card-body bg-light">
-            <h3>일반회원가입</h3>
+        <div class="card card-body bg-light margin1050">
+            <h3 class="margin30 font-weight-bold">일반회원가입</h3>
 
                 <form>
                         <div class="row">
@@ -116,7 +115,7 @@
 
                         </div>
 
-                        <div class="row">
+                        <div class="row margin30">
                             <div class="col-12 text-center">
                                 <button type="button" id="checkbtn" class="btn btn-primary">
                                     <i class="bi bi-check"></i> 확인하기</button>
@@ -125,10 +124,51 @@
                             </div>
                         </div>
                 </form>
-        </div>
+        </div> <!-- 회원가입-->
 
 
-        <div class="card card-body bg-light"></div>
+        <div class="card card-body bg-light margin1050">
+            <h3 class="margin30 font-weight-bold">실명확인 회원가입</h3>
+            <form>
+                <div class="row">
+                    <div class="col-5 offset-1">
+                        <div class="form-group row">
+                            <label for="name2" class="col-4 col-form-label text-warning">아이디</label>
+                            <input type="text" id="name2" name="name2" class="form-control col-6 border-warning">
+                        </div>
+                        <div class="form-group row">
+                            <div class="form-group row">
+                                <label for="jumin1" class="col-4 col-form-label text-warning">주민번호</label>
+                                <input type="text" id="jumin1" name="jumin1" class="form-control col-3 border-warning">&nbsp;
+                                <label class="col-form-label">&ndash;</label>&nbsp;
+                                <input type="text" id="jumin2" name="jumin2" class="form-control col-3 border-warning">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4"></label>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" id="usejm" class="custom-control-input">
+                                <label for="usejm" class="custom-control-label text-warning">주민등록번호 처리에 동의합니다.</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <ul class="text-primary font-weight-bold">
+                            <li >실명확인 회원가입시 공개 게시판 이용이 가능합니다.</li>
+                            <li class="mt-2">타인의 주민등록번호를 임의로 사용하면<span class="text-danger">'주민등록법'에 의해 3년 이하의 징역 또는 1천만원 이하의 벌금</span>이 부과될 수 있습니다.</li>
+                            <li class="mt-2">입력하신 주민등록번호는 <span class="text-danger">별도 저장되지 않으며, 신용평가기관을 통한 실명확인용</span>으로만 이용됩니다.</li>
+                            <li class="mt-2">개인정보보호법에 따라 <span class="text-danger">이용 동의</span>를 받습니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row margin30">
+                    <div class="col-12 text-center">
+                        <button type="button" class="btn btn-primary id=check2btn"><i class="bi bi-check">확인하기</i></button>
+                        <button type="button" class="btn btn-danger id=cancel2btn"><i class="bi bi-x">취소하기</i></button>
+                </div>
+                </div>
+            </form>
+        </div><!--실명확인 회원가입 -->
 
     </div><!-- main -->
 
